@@ -15,7 +15,7 @@ export default function Testimonials() {
         <div className="grid lg:grid-cols-2 gap-7 mt-11">
           {testimonialsCardItems.map((item) => (
             // Card
-            <div className="border bg-white rounded-lg p-8">
+            <div className="border bg-white rounded-lg p-8" key={item.id}>
               {/* Author Info */}
               <div className="flex items-start gap-2.5">
                 {/* Img */}

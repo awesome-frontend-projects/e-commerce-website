@@ -1,4 +1,3 @@
-import PageTitle from "@/components/PageTitle";
 import ProductCard from "@/components/ProductCard";
 import { priceItems, products } from "@/data/data";
 import React from "react";

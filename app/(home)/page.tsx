@@ -12,7 +12,7 @@ import {
   tabsTriggerItems,
 } from "@/data/data";
 import { Tabs, TabsContent, TabsList } from "@radix-ui/react-tabs";
-import { ArrowRight, PlusCircle, Star } from "lucide-react";
+import { ArrowRight, PlusCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 

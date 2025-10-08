@@ -1,4 +1,3 @@
-import PageTitle from "@/components/PageTitle";
 import Testimonials from "@/components/Testimonials";
 import Title from "@/components/Title";
 import { whyChooseUs } from "@/data/data";
