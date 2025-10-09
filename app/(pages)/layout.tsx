@@ -7,11 +7,9 @@ export default function layout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        <PageTitle title="About" />
-        <main>{children}</main>
-      </body>
-    </html>
+    <main>
+      <PageTitle title="About" />
+      {children}
+    </main>
   );
 }

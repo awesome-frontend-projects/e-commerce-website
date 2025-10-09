@@ -1,17 +1,18 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { footerList } from "@/data/data";
+import { Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-neutral-800 text-neutral-50">
       <div className="container divide-y divide-neutral-700">
         {/* Newsletter */}
-        <div className="flex items-center justify-between py-14">
+        <div className="flex flex-wrap items-center justify-between py-14">
           <h2 className="section-title">Newsletter</h2>
 
           {/* Input field */}
-          <div className="flex gap-4  max-w-md w-full">
+          <div className="flex flex-wrap gap-4  max-w-md w-full">
             <div className="bg-white rounded-full w-full">
               <input
                 type="email"
@@ -26,7 +27,9 @@ export default function Footer() {
 
           {/* Social Links */}
           <div>
-            <a href="#" className="size-12 flex items-center"></a>
+            <a href="#" className="size-12 flex items-center">
+              <Facebook />
+            </a>
           </div>
         </div>
 

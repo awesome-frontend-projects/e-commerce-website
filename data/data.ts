@@ -57,52 +57,52 @@ export const categoryCardItems = [
   {
     id: 3,
     icon: Joystick,
-    label: "Camera",
+    label: "Controller",
   },
   {
     id: 4,
     icon: Smartphone,
-    label: "Camera",
+    label: "Phones",
   },
   {
     id: 5,
     icon: Monitor,
-    label: "Camera",
+    label: "Computer",
   },
   {
     id: 6,
     icon: Watch,
-    label: "Camera",
+    label: "Smart watch",
   },
   {
     id: 7,
     icon: Cable,
-    label: "Camera",
+    label: "Cables",
   },
   {
     id: 8,
     icon: Printer,
-    label: "Camera",
+    label: "Printer",
   },
   {
     id: 9,
     icon: Drone,
-    label: "Camera",
+    label: "Dron",
   },
   {
     id: 10,
     icon: Bluetooth,
-    label: "Camera",
+    label: "Speaker",
   },
   {
     id: 11,
     icon: Mic,
-    label: "Camera",
+    label: "Microphone",
   },
   {
     id: 12,
     icon: ScanBarcode,
-    label: "Camera",
+    label: "Scanner",
   },
 ];
 
@@ -226,30 +226,179 @@ export const tabsContentItems = [
   {
     id: 1,
     value: "Camera",
-    img: "/images/product-1.png",
-    name: "Business Ultrabook i7",
-    price: "$1,499.99",
+    list: [
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+    ],
   },
   {
     id: 2,
-    value: "Camera",
-    img: "/images/product-1.png",
-    name: "Business Ultrabook i7",
-    price: "$1,499.99",
+    value: "Headphone",
+    list: [
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+    ],
   },
   {
     id: 3,
-    value: "Camera",
-    img: "/images/product-1.png",
-    name: "Business Ultrabook i7",
-    price: "$1,499.99",
+    value: "Phone",
+    list: [
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+    ],
   },
   {
     id: 4,
-    value: "Camera",
-    img: "/images/product-1.png",
-    name: "Business Ultrabook i7",
-    price: "$1,499.99",
+    value: "computer",
+    list: [
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+    ],
+  },
+  {
+    id: 5,
+    value: "Smart watch",
+    list: [
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+    ],
+  },
+  {
+    id: 6,
+    value: "Speaker",
+    list: [
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+    ],
+  },
+  {
+    id: 7,
+    value: "Controller",
+    list: [
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+      {
+        img: "/images/product-1.png",
+        name: "Business Ultrabook i7",
+        price: "$1,499.99",
+      },
+    ],
   },
 ];
 
@@ -263,6 +412,20 @@ export const testimonialsCardItems = [
   },
   {
     id: 2,
+    img: "/images/img-2.png",
+    name: "Jessica",
+    role: "CEO",
+    text: "Lorem ipsum dolor sit amet consectetur. At commodo purus massa amet amet congue vulputate purus morbi. Congue facilisis tincidunt.",
+  },
+  {
+    id: 3,
+    img: "/images/img-2.png",
+    name: "Jessica",
+    role: "CEO",
+    text: "Lorem ipsum dolor sit amet consectetur. At commodo purus massa amet amet congue vulputate purus morbi. Congue facilisis tincidunt.",
+  },
+  {
+    id: 4,
     img: "/images/img-2.png",
     name: "Jessica",
     role: "CEO",

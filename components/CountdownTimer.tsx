@@ -6,7 +6,7 @@ import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 
 export default function CountdownTimer() {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex flex-col lg:flex-row justify-center items-center">
       <FlipClockCountdown
         to={new Date().getTime() + 4 * 24 * 3600 * 1000 + 5000}
         labels={["DAYS", "HOURS", "MINUTES", "SECONDS"]}
@@ -17,8 +17,8 @@ export default function CountdownTimer() {
           color: "#fff",
         }}
         digitBlockStyle={{
-          width: 60,
-          height: 60,
+          maxWidth: 60,
+          maxHeight: 60,
           fontSize: 38,
           backgroundColor: "#fff",
           color: "#000",

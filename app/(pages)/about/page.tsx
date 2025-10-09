@@ -12,12 +12,15 @@ export default function About() {
         <div className="container grid lg:grid-cols-2 lg:items-center gap-8">
           {/* content */}
           <div className="lg:order-1">
-            <Title
-              subtitle="ABOUT US"
-              title="Innovative solutions to
-boost your projects"
-              classes="text-left lg:mx-0"
-            />
+            {/* title */}
+            <div>
+              <p className="bg-gray-100 max-w-max rounded-full px-2">
+                ABOUT US
+              </p>
+              <h2 className="section-title">
+                Innovative solutions to boost your projects
+              </h2>
+            </div>
 
             <p className="mt-3.5">
               Lorem ipsum dolor sit amet consectetur. Et tortor eleifend amet
@@ -53,9 +56,12 @@ boost your projects"
           <Title subtitle="WHY US" title="WHY YOU SHOULD CHOOSE US?" />
 
           {/* Card wrapper */}
-          <div className="grid gap-11 lg:grid-cols-4 mt-10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 mt-10">
             {whyChooseUs.map((item) => (
-              <div key={item.id}>
+              <div
+                key={item.id}
+                className="lg:border-none  md:even:border-l md:nth-[1]:border-b md:nth-[4]:border-t p-9 lg:p-5"
+              >
                 {/* Icon */}
                 <span className="size-[60px] flex items-center ring ring-black/20 rounded-full justify-center justify-self-center mb-3.5">
                   <item.icon size={24} />

@@ -1,8 +1,14 @@
+"use client";
 import React from "react";
 import Title from "./Title";
 import Image from "next/image";
 import { Star } from "lucide-react";
 import { testimonialsCardItems } from "@/data/data";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper/modules";
 
 export default function Testimonials() {
   return (
@@ -12,10 +18,30 @@ export default function Testimonials() {
         <Title subtitle="TESTIMONIALS" title="What People Says" />
 
         {/* Card wrapper */}
-        <div className="grid lg:grid-cols-2 gap-7 mt-11">
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          pagination={{
+            clickable: true,
+          }}
+          spaceBetween={30}
+          breakpoints={{
+            575: {
+              slidesPerView: 2,
+            },
+          }}
+          autoplay={{
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+            delay: 2000,
+          }}
+          className="grid lg:grid-cols-2 gap-7 mt-11"
+        >
           {testimonialsCardItems.map((item) => (
             // Card
-            <div className="border bg-white rounded-lg p-8" key={item.id}>
+            <SwiperSlide
+              className="border bg-white rounded-lg p-8 mb-20"
+              key={item.id}
+            >
               {/* Author Info */}
               <div className="flex items-start gap-2.5">
                 {/* Img */}
@@ -45,9 +71,9 @@ export default function Testimonials() {
                 <Star fill="#FF9727" />
                 <Star fill="#FF9727" />
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </section>
   );

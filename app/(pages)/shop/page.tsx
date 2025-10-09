@@ -6,9 +6,9 @@ export default function Shop() {
   return (
     <>
       <section className="my-20">
-        <div className="container grid lg:grid-cols-12 gap-4">
+        <div className="container grid md:grid-cols-[0.4fr_1fr]  gap-4">
           {/* boxs */}
-          <div className="space-y-6 col-span-3">
+          <div className="space-y-6 ">
             {priceItems.map((item) => (
               <div
                 key={item.id}
@@ -37,9 +37,9 @@ export default function Shop() {
             ))}
           </div>
           {/* Product list */}
-          <div className="col-span-9 space-y-2.5">
+          <div className="space-y-2.5">
             <p>Showing 1 - 9 of 9 result</p>
-            <div className="grid lg:grid-cols-3 gap-4">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {products.map((item) => (
                 <ProductCard key={item.id} {...item} />
               ))}
